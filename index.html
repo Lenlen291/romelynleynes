@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
     <div class="name">
         <div class="search">
         </div>
@@ -512,5 +515,12 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(switchImage4, 3000); // Switch image every 3 seconds
 });
 </script>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        }, 3000); // 3 seconds
+    });
+    </script>
 </html>

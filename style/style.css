@@ -29,7 +29,33 @@ body::-webkit-scrollbar-thumb:hover {
 .search {
     margin: 90px;
 }
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff; /* Change to match your site's background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.loader {
+    border: 5px solid #f3f3f3c4;
+    border-radius: 50%;
+    border-top: 5px solid #846045;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 .name {
     width: 100%;
     height: 100px;
